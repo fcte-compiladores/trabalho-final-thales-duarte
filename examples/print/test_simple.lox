@@ -1,0 +1,13 @@
+class Test {
+  init(value) {
+    this.value = value;
+  }
+  
+  toString() {
+    return "Test(" + this.value + ")";
+  }
+}
+
+var t = Test(42);
+print t;
+print "Teste simples: " + 123; 

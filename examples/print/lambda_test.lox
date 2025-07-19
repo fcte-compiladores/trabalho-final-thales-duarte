@@ -1,0 +1,28 @@
+print "Testando funções anônimas (lambdas)!";
+
+var add = |(a, b)| a + b;
+print add(5, 3);
+
+var square = |(x)| x * x;
+print square(4);
+
+var greet = |(name)| "Olá, " + name + "!";
+print greet("João");
+
+var isPositive = |(n)| n > 0;
+print isPositive(4);
+print isPositive(-7);
+
+var complex = |(x, y)| {
+    (x * y) + 10;
+};
+print complex(3, 4);
+
+var counter = 0;
+var increment = |()| {
+    counter = counter + 1;
+    counter;
+};
+print increment();
+print increment();
+print increment(); 

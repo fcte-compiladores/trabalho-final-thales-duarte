@@ -1,0 +1,14 @@
+print "Testando dicionários!";
+var d = dict();
+dictSet(d, "nome", "João");
+dictSet(d, "idade", 25);
+dictSet(d, "ativo", true);
+print d;
+print dictGet(d, "nome");
+print dictGet(d, "idade");
+print dictGet(d, "ativo");
+print dictGet(d, "inexistente");
+print dictLength(d);
+dictDelete(d, "idade");
+print d;
+print dictLength(d); 

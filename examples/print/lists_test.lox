@@ -1,0 +1,10 @@
+print "hello world!";
+var l = list();
+append(l, 1);
+append(l, 2);
+append(l, 3);
+print l;
+print get(l, 1);
+set(l, 1, 42);
+print l;
+print length(l); 

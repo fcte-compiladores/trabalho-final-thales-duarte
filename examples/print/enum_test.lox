@@ -1,0 +1,20 @@
+print "Testando enums!";
+var cores = enum("Cores");
+enumAddValue(cores, "vermelho", 1);
+enumAddValue(cores, "verde", 2);
+enumAddValue(cores, "azul", 3);
+print cores;
+print enumGetValue(cores, "vermelho");
+print enumGetValue(cores, "verde");
+print enumGetValue(cores, "azul");
+print enumGetValue(cores, "inexistente");
+print enumLength(cores);
+
+var status = enum("Status");
+enumAddValue(status, "ativo", true);
+enumAddValue(status, "inativo", false);
+enumAddValue(status, "pendente", "aguardando");
+print status;
+print enumGetValue(status, "ativo");
+print enumGetValue(status, "pendente");
+print enumLength(status); 

@@ -1,0 +1,17 @@
+class Vec2 {
+  init(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+  __add__(other) {
+    return Vec2(this.x + other.x, this.y + other.y);
+  }
+  toString() {
+    return "Vec2(" + this.x + ", " + this.y + ")";
+  }
+}
+
+var a = Vec2(1, 2);
+var b = Vec2(3, 4);
+var c = a + b;
+print c; // Esperado: Vec2(4, 6) 

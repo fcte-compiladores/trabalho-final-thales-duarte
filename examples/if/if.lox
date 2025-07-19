@@ -1,0 +1,3 @@
+if (true) print "block";
+if (false) print "no";
+if (2 > 1) print 2; 
